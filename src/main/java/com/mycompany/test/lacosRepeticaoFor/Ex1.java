@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.test.lacosrepeticao;
+package com.mycompany.test.lacosRepeticaoFor;
 
 import java.util.Scanner;
 
@@ -16,15 +16,14 @@ public class Ex1 {
 
         Scanner sc = new Scanner(System.in);
 
-        int senha = sc.nextInt();
+        int num = sc.nextInt();
 
-        while (senha != 2002) {
+        for (int i = 0; i < num; i++) {
 
-            System.out.println("Senha Invalida");
-            senha = sc.nextInt();
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
         }
-        System.out.println("Acesso Permitido");
-        
-        sc.close();
+
     }
 }
